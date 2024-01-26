@@ -5,3 +5,7 @@ body {
 .hidden {
     display: none;
 }
+
+#menuContent {
+    display: none;
+}

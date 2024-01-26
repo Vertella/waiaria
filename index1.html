@@ -1,5 +1,8 @@
 <!--Uppgift 2
-
+<dialog> elementet anger korrekt struktur för modal-fönstret vilket gör det enklare
+    för användare med funktionshinder att navigera modalen eftersom att skärmläsare kommer
+    att kunna läsa den korrekt. Det är också mer konsistent för alla typer av användare
+    och hjälpmedel, t.ex. vid avbrott och återupptagande av fönstrt.
 -->
 <!DOCTYPE html>
 <html>
@@ -10,7 +13,7 @@
         <button type="button" onclick="openDialog()">
             Modal
         </button>
-        <dialog id="accessibleDialog">
+        <dialog id="accessibleDialog" role="dialog" aria-modal="true" aria-labelledby="accessibleDialog" aria-label="Pop up window" aria-describedby="A pop-up window that shows an example of a modal window. Use button to close.">
             <h2>Exempel på tillgängligt modalfönster med &lt;dialog&gt;</h2>
             <p>Här är innehållet i modalfönstret.</p>
             <button id="closeDialogBtn" onclick="closeDialog()">Stäng</button>

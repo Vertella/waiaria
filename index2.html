@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button id="menuButton" aria-pressed="true" onclick="openMenu()">Meny</button>
+        <button id="menuButton" class="menu-toggle" role="button" aria-expanded="false" aria-controls="menuContent" aria-label="Open the menu" aria-labelledby="menuButton" onclick="toggleMenu()">Meny</button>
         <nav id="menuContent">
           <ul>
             <li><a href="#">Hem</a></li>

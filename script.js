@@ -26,9 +26,18 @@ function closeDialog() {
     }
 }
 
-function openMenu() {
-    const element = document.getElementById("menuContent");
-    element.showModal();
+function toggleMenu() {
+    var menuContent = document.getElementById("menuContent");
+    var menuButton = document.getElementById("menuButton");
+    
+    if (menuContent.style.display === "block") {
+        menuContent.style.display = "none";
+        menuButton.setAttribute("aria-expanded", "false");
+    } else {
+        menuContent.style.display = "block";
+        menuButton.setAttribute("aria-expanded", "true");
+    }
+
     const firstFocusableElement = element.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
     if (firstFocusableElement) {
         firstFocusableElement.focus();
