@@ -1,16 +1,17 @@
+<!--Uppgift 1-->
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button type="button" onclick="openDialog('accessibleModal', this)">
+        <button type="button" onclick="openModal('accessibleModal', this)">
             Modal
         </button>
         <div id="accessibleModal" role="dialog" aria-labelledby="modalTitle" aria-modal="true" class="hidden">
             <h2 id="modalTitle">Exempel på modalfönster</h2>
             <p>Här är lite text i modalfönstret.</p>
-            <button id="closeModalBtn" onclick="closeDialog(this)">Stäng</button>
+            <button id="closeModalBtn" onclick="closeModal(this)">Stäng</button>
           </div>
           <script src="script.js"></script>
     </body>
